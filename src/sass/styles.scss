@@ -265,10 +265,7 @@ a[href^="tel"]{
     // background: #ffffff;
     margin: 0 auto;
     margin-top: -220px;
-    .frame_youtube--iframe {
-      // position: relative;
-      // bottom: 50%;
-      }
+
   }
 
 
@@ -474,7 +471,7 @@ a[href^="tel"]{
       box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
       border-radius: 2px;
       border: none;
-      margin-top: 80px;
+      // margin-top: 80px;
     }
     label[for="name_3"], label[for="phone_3"] {
       font-family: FuturaBookC;
@@ -499,8 +496,8 @@ a[href^="tel"]{
       display: flex;
       justify-content: center;
       align-items: center;
-      bottom: 120px;
-    padding: 0;
+      top: 25px;
+      padding: 0;
     margin: 0;
     right: 30px;
     position: relative;
@@ -511,9 +508,14 @@ a[href^="tel"]{
   width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
   flex: 1;
   margin: 0 auto;
+  background: #ffffff;
+  .photo_block_3 {
+    height: 770px;
+  }
   .m2 {
     width: 228px;
     height: 54px;
@@ -688,9 +690,7 @@ a[href^="tel"]{
   
           }
         }
-        input[type="checkbox"] {
-          // margin-right: 6px;
-        }
+        
         .authorization_input--email {
           display: flex;
           flex-direction: column;
@@ -842,7 +842,7 @@ a[href^="tel"]{
 .design_working {
   width: 100%;
   height: 1616px;
-  background: #131313;
+  background: #181818;
   display: flex;
   flex-direction: column;
 
@@ -1197,6 +1197,8 @@ a[href^="tel"]{
     padding-top: 9px;
   }
   .experience {
+    position: relative;
+    top: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1291,328 +1293,407 @@ a[href^="tel"]{
   width: 1236px;
   height: 1060px;
   margin: 0 auto;
-  .our_clients--description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .description--header {
-      font-family: Yeseva One;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 28px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #181818;
-    }
-    .description--txt {
-      font-family: FuturaBookC;
-      font-size: 20px;
-      line-height: 27px;
-      text-align: center;      
-      color: #363636;
-    }
-  }
+}
+
+.our_clients .our_clients--description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.our_clients .our_clients--description .description--header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #181818;
+}
+
+.our_clients .our_clients--description .description--txt {
+  font-family: FuturaBookC;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #363636;
 }
 
 .our_clients--blocks {
-    display: flex;
-    justify-content: space-between;
-  
-  .blocks--2 {
-    width: 376px;
-    height: 428px;
-  }.blocks--3 {
-    width: 376px;
-    height: 428px;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 
+.our_clients--blocks .blocks--2 {
+  width: 376px;
+  height: 428px;
+}
 
-  .blocks--1 {
-    background: #FFFFFF;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-    width: 376px;
-    height: 428px;
-    
-    .blocks--description {
-      font-family: FuturaBookC;
-      font-size: 15px;
-      line-height: 180%;
-      /* or 27px */
-      color: #959595;
-      padding-left: 20px;      
-    }
-    .blocks--top {
-      display: flex;
-      padding-left: 20px;
-      padding-top: 24px;
-      padding-bottom: 22px;
-      .blocks--name {
-        font-family: Yeseva One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 23px;
-        color: #181818;
-        padding-left: 23px;
-      }
-    }
-    .blocks--btn {
-      position: relative;
-      right: 15px;
-      top: 17px;
-    }
-  }
- 
+.our_clients--blocks .blocks--3 {
+  width: 376px;
+  height: 428px;
+}
 
+.our_clients--blocks .blocks--1 {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  width: 376px;
+  height: 428px;
+}
 
-  .blocks--2 {
-    background: #FFFFFF;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-    width: 376px;
-    height: 428px;
-    
-    .blocks--description {
-      font-family: FuturaBookC;
-      font-size: 15px;
-      line-height: 180%;
-      /* or 27px */
-      color: #959595;
-      padding-left: 20px;      
-    }
-    .blocks--top {
-      display: flex;
-      padding-left: 20px;
-      padding-top: 24px;
-      padding-bottom: 22px;
-      .blocks--name {
-        font-family: Yeseva One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 23px;
-        color: #181818;
-        padding-left: 23px;
-      }
-    }
-    .blocks--btn {
-      position: relative;
-      right: 15px;
-      top: 17px;
-    }
-  }
-  
+.our_clients--blocks .blocks--1 .blocks--description {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 180%;
+  /* or 27px */
+  color: #959595;
+  padding-left: 20px;
+}
 
+.our_clients--blocks .blocks--1 .blocks--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
 
-  .blocks--3 {
-    background: #FFFFFF;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
-    width: 376px;
-    height: 428px;
-    // padding-top: 50px;
-    
-    .blocks--description {
-      font-family: FuturaBookC;
-      font-size: 15px;
-      line-height: 180%;
-      /* or 27px */
-      color: #959595;
-      padding-left: 20px;      
-    }
-    .blocks--top {
-      display: flex;
-      padding-left: 20px;
-      padding-top: 24px;
-      padding-bottom: 22px;
-      .blocks--name {
-        font-family: Yeseva One;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 23px;
-        color: #181818;
-        padding-left: 23px;
-      }
-    }
-    .blocks--btn {
-      position: relative;
-      right: 15px;
-      top: 17px;
-    }
-  }
+.our_clients--blocks .blocks--1 .blocks--top .blocks--name {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+  padding-left: 23px;
+}
+
+.our_clients--blocks .blocks--1 .blocks--btn {
+  position: relative;
+  right: 15px;
+  top: 17px;
+}
+
+.our_clients--blocks .blocks--2 {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  width: 376px;
+  height: 428px;
+}
+
+.our_clients--blocks .blocks--2 .blocks--description {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 180%;
+  /* or 27px */
+  color: #959595;
+  padding-left: 20px;
+}
+
+.our_clients--blocks .blocks--2 .blocks--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+.our_clients--blocks .blocks--2 .blocks--top .blocks--name {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+  padding-left: 23px;
+}
+
+.our_clients--blocks .blocks--2 .blocks--btn {
+  position: relative;
+  right: 15px;
+  top: 17px;
+}
+
+.our_clients--blocks .blocks--3 {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+  width: 376px;
+  height: 428px;
+}
+
+.our_clients--blocks .blocks--3 .blocks--description {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 180%;
+  /* or 27px */
+  color: #959595;
+  padding-left: 20px;
+}
+
+.our_clients--blocks .blocks--3 .blocks--top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-top: 24px;
+  padding-bottom: 22px;
+}
+
+.our_clients--blocks .blocks--3 .blocks--top .blocks--name {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  color: #181818;
+  padding-left: 23px;
+}
+
+.our_clients--blocks .blocks--3 .blocks--btn {
+  position: relative;
+  right: 15px;
+  top: 17px;
 }
 
 /*********************************************
 ********************FOOTER********************
 *********************************************/
 
-.footer{
+.footer {
   width: 100%;
   height: 1000px;
   background: rgba(24, 24, 24, 0.9);
-  .footer--authorization {
-    position: relative;
-    width: 883px;
-    height: 445px;
-    background: #181818;
-    margin: 0 auto;
-    bottom: 250px;
-    .authorization--name_phone {
-      display: flex;
-      justify-content: space-between;
-    }
-    .authorization--input {
-      width: 520px;
-      height: 377px;
-      margin: 0 auto;
+}
 
+.footer .footer--authorization {
+  position: relative;
+  width: 883px;
+  height: 445px;
+  background: #181818;
+  margin: 0 auto;
+  bottom: 250px;
+}
 
-      .input--header {
-      font-family: Yeseva One;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 28px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      padding-top: 24px;
-      padding-bottom: 26px;
-      }
-        input[type="submit"] {
-          width: 200px;
-          height: 51px;;
-          background: #E3B873;
+.footer .footer--authorization .authorization--name_phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .footer--authorization .authorization--input {
+  width: 520px;
+  height: 377px;
+  margin: 0 auto;
+}
+
+.footer .footer--authorization .authorization--input .input--header {
+  font-family: Yeseva One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding-top: 24px;
+  padding-bottom: 26px;
+}
+
+.footer .footer--authorization .authorization--input input[type="submit"] {
+  width: 200px;
+  height: 51px;
+  background: #E3B873;
+  -webkit-box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
           box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
-          border-radius: 2px;
-          border: none;
-          font-family: FuturaDemiC;
-          font-size: 13px;
-          text-align: center;
-          text-transform: uppercase;
-          color: #FFFFFF;
-          margin-left: 150px;
-        }
-        label[for="name_3"], label[for="phone_3"], label[for="question"] {
-          font-family: FuturaBookC;
-          font-size: 15px;
-          line-height: 20px;
-          color: rgba(255, 255, 255, 0.5);
-        }
-        .authorization_input--name {
-          display: flex;
-          flex-direction: column;  
-          padding-bottom: 49px;
-          .input_name {
-            width: 231px;
-            height: auto;
-            border: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-            font-family: FuturaMediumC;
-            font-size: 18px;
-            line-height: 25px;
-            color: #FFFFFF;
-            background: none;
-            
-            
-          } 
-        }
-        .authorization_input--phone {
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 49px;
+  border-radius: 2px;
+  border: none;
+  font-family: FuturaDemiC;
+  font-size: 13px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-left: 150px;
+}
 
-          .input_tel {
-            width: 231px;
-            height: auto;
-            border: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-            box-sizing: border-box;
-            font-family: FuturaMediumC;
-            font-size: 18px;
-            line-height: 25px;
-            color: #FFFFFF;
-            background: none;
-          background: none;
-  
-          }
-        }
-        .authorization_input--question {
-          display: flex;
-          flex-direction: column;
-          padding-bottom: 46px;
+.footer .footer--authorization .authorization--input label[for="name_3"], .footer .footer--authorization .authorization--input label[for="phone_3"], .footer .footer--authorization .authorization--input label[for="question"] {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.5);
+}
 
-          .input_question {
-            width: 517px;
-            height: auto;
-            border: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-            box-sizing: border-box;
-            font-family: FuturaMediumC;
-            font-size: 18px;
-            line-height: 25px;
-            color: #FFFFFF;
-            background: none;
-  
-          }
-        }
-
-        .authorization_input--question {
-          display: flex;
+.footer .footer--authorization .authorization--input .authorization_input--name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
           flex-direction: column;
-        }
-        .authorization_input--checkbox {
-          display: flex;
+  padding-bottom: 49px;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--name .input_name {
+  width: 231px;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background: none;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 49px;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--phone .input_tel {
+  width: 231px;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background: none;
+  background: none;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 46px;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--question .input_question {
+  width: 517px;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: FuturaMediumC;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  background: none;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer--authorization .authorization--input .authorization_input--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
           justify-content: center;
-          font-family: FuturaBookC;
-          font-size: 16px;
-          line-height: 22px;
-          color: #FFFFFF;
-          padding-bottom: 50px;
-        }  
-      }
-    }
-    .nav{
-      display: flex;  
-      width: 100%;
-      height: 133px;
-      background: #181818;
-        .nav--block {
-          width: 1256px;
-          height: 37px;
-          display: flex;
-          margin: 48px 92px 48px 92px;
+  font-family: FuturaBookC;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-bottom: 50px;
+}
+
+.footer .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 133px;
+  background: #181818;
+}
+
+.footer .nav .nav--block {
+  width: 1256px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 48px 92px 48px 92px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
           align-items: baseline;
-          .nav--h1 {
-            width: 179.74px;
-            height: 10px;
-            font-family: "Futurademic";
-            font-size: 14px;
-            line-height: 16px;
-            text-transform: uppercase;
-            color: #E3B873;
-            // padding-right: 95px;
-          }
-        }
-    }
-  }
-  
- .footer--contacts {
+}
+
+.footer .nav .nav--block .nav--h1 {
+  width: 179.74px;
+  height: 10px;
+  font-family: "Futurademic";
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #E3B873;
+}
+
+.footer--contacts {
   text-align: center;
   margin-top: 100px;
- }
+}
 
- .footer--maps {
+.footer--maps {
   width: 925px;
   position: relative;
   height: 465px;
   bottom: 74px;
   right: 25px;
   margin: 0 auto;
- }
+}
+
 
 /*********************************************
 **************WRAPPER & HEADER****************
@@ -1620,14 +1701,14 @@ a[href^="tel"]{
 
  @media screen and (max-width: 375px) {
   .body {
-    margin: 0;
-  width: 375px;
+  margin: 0;
+  max-width: 375px;
   height: auto;
 }
   .wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 375px;
+    width: 100%;
     // height: 100%;
     height: auto;
     background: #181818;
@@ -1832,14 +1913,18 @@ a[href^="tel"]{
 .main_container {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .main_container--completed_project {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
   .completed_project--block_1 {
     display: flex;
-    width: 100%;
+    width: 0;
     height: 1048px;
     background: rgba(0, 0, 0, 0.7);
     padding: 0;
@@ -1873,7 +1958,7 @@ a[href^="tel"]{
     width: 100%;
     height: 207px;
     // margin: 0 auto;  
-    position: absolute;
+    // position: absolute;
     // bottom: 210px;
     .frame_youtube--iframe {
       width: 340px;
@@ -1889,11 +1974,12 @@ a[href^="tel"]{
   flex-direction: column;
   width: 100%;
   height: auto;
+
   .left--online {
     display: flex;
     align-self: center;
-    padding-top: 90px;
-    padding-left: 40px;
+    padding-top: 60px;
+    padding-left: 15px;
   }
   .slider_photo {
     overflow: hidden;
@@ -1907,6 +1993,7 @@ a[href^="tel"]{
     font-size: 22px;
     line-height: 138.6%;
     text-align: center;
+    padding-top: 30px;
   }
   .text_2 {
     font-family: FuturaBookC;
@@ -2038,10 +2125,12 @@ a[href^="tel"]{
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 1440px;
+  height: auto;
   img {
-    padding-top: 28px;
-    padding-bottom: 21px;
+    padding-top: 40px;
+    padding-bottom: 17px;
+    width: 100%;
+    height: auto;
       }
     .main_container--text {
       width: 340px;
@@ -2066,18 +2155,21 @@ a[href^="tel"]{
       line-height: 28px;
       text-align: center;
       text-transform: uppercase;
-      color: #181818;
+      color: #000000;
+      position: relative;
+      top: 120px;
       .text_2--img_2 {
         padding: 0;
         margin: 0 auto;
+        width: 120px;
       }
     }
 }
 
 .authorization {
-  padding-top: 55px;
+  padding-top: 35px;
   width: 340px;
-  height: 311px;
+  height: 245px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -2112,6 +2204,8 @@ a[href^="tel"]{
       border-bottom: 1px solid rgba(54, 54, 54, 0.3);  
     }
     input[type="submit"] {
+      position: relative;
+      top: 100px;
       font-family: FuturaDemiC;
       font-size: 15px;
       line-height: 26px;
@@ -2134,12 +2228,13 @@ a[href^="tel"]{
     .authorization_input--name {  
       display: flex;
       flex-direction: column;  
-      padding-right: 58px;
+      // padding-right: 58px;
     }
     .authorization_input--phone {
       display: flex;
       flex-direction: column;
-      padding-right: 49px;
+      padding-top: 35px;
+      // padding-right: 49px;
     }
     input[type="checkbox"] {
       margin-right: 6px;
@@ -2149,18 +2244,25 @@ a[href^="tel"]{
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      top: -35px;
     }    
 }
 
 .types_of_repair--photo_block {
-  width: 1236px;
-  height: 608px;
+  width: 100%;
+  height: auto;
   display: flex;
+  flex-direction: column;
   flex: 1;
   margin: 0 auto;
+  background: #ffffff;
+  padding-top: 120px;
+  padding-left: 18px;
+  padding-right: 17px;
   .m2 {
     width: 228px;
-    height: 54px;
+    min-height: 54px;
     background: #E3B873;
     box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
     margin: 0 auto;
@@ -2173,14 +2275,18 @@ a[href^="tel"]{
     line-height: 25px;
     text-transform: uppercase;
     color: #FFFFFF;
-    top: 152px;
+    top: 55px;
     right: 56px;
     justify-content: center;
     display: flex;
     align-items: center;
   }
   .photo_block_1 {
-    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 550px;
     .text_block_1 {
       background: #ffffff;
       width: 392px;
@@ -2189,44 +2295,49 @@ a[href^="tel"]{
     
   }
   .photo_block_2 {
-    padding-right: 30px;
-
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    height: 550px;
   // }
-  // .photo_block_3 {
-
+  .photo_block_3 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
   }
   .text_block {
-    width: 330px;
-    height: 286px;
+    width: 270px;
+    height: 241px;
+    right: 35px;
+    bottom: 215px;
     background: #ffffff;
     margin: 0 auto;
     position: relative;
-    bottom: 160px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
   }
   .photo_block_1--text_1 {
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 25px;
     color: #363636;
-    padding: 25px 68px 13px 34px;
+    padding: 21px 47px 10px 31px;
   }
   .photo_block_1--text_2 {
     font-family: FuturaBookC;
-    font-size: 15px;
-    line-height: 25px;
+    font-size: 13px;
+    line-height: 169.8%;
     color: #959595;
     padding: 0 29px 49px 34px;
   }
 }
 
 .cost {
-  display: flex;
-  width: 100%;
-  height: 725px;
-  margin-bottom: 240px;
+  display: none;
 
   img {
     object-fit: contain;
@@ -2332,9 +2443,7 @@ a[href^="tel"]{
   
           }
         }
-        input[type="checkbox"] {
-          // margin-right: 6px;
-        }
+        
         .authorization_input--email {
           display: flex;
           flex-direction: column;
@@ -2366,16 +2475,20 @@ a[href^="tel"]{
 
 .realize {
   width: 100%;
-  height: 1018px;
- 
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  bottom: 220px;
   .realize--background {
     display: flex;
-    width:100%;
-    height: 864px;
+    width: 340px;
+    height: 242px;
     background: #181818;
     background-image: url("../images/image\ 5.1.png");
     background-size: cover;
-    background-blend-mode: overlay;
+    background-blend-mode: inherit;
     top: 114px;
     position: relative;
     
@@ -2385,95 +2498,79 @@ a[href^="tel"]{
 .realize--flex_1 {
   display: flex;
   flex-direction: column;
-  padding-left: 99px;
-  padding-right: 199px;
+  padding: 0;
+  margin: 0;
+  width: 289px;
+  height: 66px;
+  position: relative;
+  bottom: 90px;
+  left: 60px;
 
   .flex_1--list{
-  width: 299px;
-  height: 516px;
+    display: none;
 
-  .list--link_style{
-    font-family: Proxima Nova;
-    font-size: 20px;
-    line-height: 34px;
-    color: #FFFFFF;  
-    text-decoration: none;
-    padding-bottom: 23px;   
   }
-    a:hover {
-      text-decoration: underline;
-      font-family: Proxima Nova;
-      color: #E3B873;
-  }
-  }
+  
   .flex_1--header {
     width: 289px;
     height: 66px;
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
-    font-size: 27px;
+    font-size: 22px;
+    line-height: 138.6%;
     text-transform: uppercase;
     color: #E3B873;
-    margin-top: 137px;
+    margin: 0;
+    padding: 0;
+
     
   }
 }
 
 .realize--flex_2 {
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
 .realize--flex_3 {
-  display: flex;
-  flex-direction: column;
+  display: none;
 }
 
-.realize--flex_2 {
-  padding-right: 43px;
-
-  .flex_2--room_1 {
-  position: relative;
-  bottom: 41px;
-
-  }
-  .flex_2--room_2 {
-    position: relative;
-    // top: 42px;
-  }
-}
-
-.realize--flex_3 {
-  
-  .flex_2--room_3 {
-    position: relative;
-    bottom: 120px;
-  }
-  .flex_2--room_4 {
-    position: relative;
-    bottom: 75px;
-  }
-}
 
 .design_project {
-  width: 100%;
-  height: 576px;
- margin-top: 112px;
+
+  width: 340px;
+  height: 204px;
+  position: relative;
+  bottom: 42px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-self: center;
   .design_project--header {
+    margin: 0;
+    padding: 0;
     font-family: Yeseva One;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #181818;
-    padding-bottom: 13px;
+    color: #ffffff;
   }
   .design_project--img {
+    margin: 0;
+    padding: 0;
     display: flex;
     margin: 0 auto;
-    padding-bottom: 24px;
   }
   .design_project--description {
   font-family: FuturaBookC;
@@ -2485,35 +2582,41 @@ a[href^="tel"]{
 }
 
 .design_working {
-  width: 100%;
-  height: 1616px;
-  background: #131313;
+  width: 340px;
+  height: 2600px;
+  background: #181818;
   display: flex;
   flex-direction: column;
+  align-self: center;
 
   .design_working--photo_block { 
-    width: 100%;
-    height: 430px;
+    width: 340px;
+    height: 2000px;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background: #181818;
+    // justify-content: space-evenly;
+
     .photo_block--block_1 {
       .block_1--mini {
         .mini--header {
           font-family: Yeseva One;
           font-style: normal;
           font-weight: normal;
-          font-size: 18px;
+          font-size: 15px;
           color: #363636;
         }
         .mini--txt {
           font-family: FuturaBookC;
-          font-size: 15px;
+          font-size: 13px;
           line-height: 25px;
           color: #959595;
         }
         .mini--btn {
-          width: 228px;
-          height: 54px;
+          width: 190px;
+          height: 40px;
           background: #E3B873;
           box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
           font-family: Yeseva One;
@@ -2527,7 +2630,7 @@ a[href^="tel"]{
           align-items: center;
           justify-content: center;
           position: relative;
-          top: 30px;
+          top: 18px;
           right: 34px;
         }
         display: flex;
@@ -2535,18 +2638,21 @@ a[href^="tel"]{
         justify-content: center;
         position: relative;
         background: #ffffff;
-        width: 330px;
-        height: 211px;
+        width: 270px;
+        height: 177px;
         margin: 0 auto;
         padding-top: 25px;
         padding-left: 34px;
-        top: 300px;
+        top: 220px;
+        right: 35px;
       }
-        width: 392px;
-        height: 421px;
-        background: url("../images/image.png");
-        position: relative;
-        bottom: 288px;
+      width: 340px;
+      height: 365px;
+        background-image: url("../images/image.png");
+        padding: 0;
+    margin: 0;
+        // position: relative;
+        // bottom: 288px;
     }
     .photo_block--block_2 {
       .block_2--standart {
@@ -2564,8 +2670,8 @@ a[href^="tel"]{
           color: #959595;
         }
         .standart--btn {
-          width: 228px;
-          height: 54px;
+          width: 190px;
+          min-height: 40px;
           background: #E3B873;
           box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
           font-family: Yeseva One;
@@ -2579,7 +2685,7 @@ a[href^="tel"]{
           align-items: center;
           justify-content: center;
           position: relative;
-          top: 30px;
+          top: 10px;
           right: 34px;
         }
         display: flex;
@@ -2587,18 +2693,21 @@ a[href^="tel"]{
         justify-content: center;
         position: relative;
         background: #ffffff;
-        width: 330px;
-        height: 286px;
+        width: 270px;
+        height: 241px;
         margin: 0 auto;
         padding-top: 25px;
         padding-left: 34px;
-        top: 300px;
+        top: 225px;
+        right: 35px;
       }  
-        background: url("../images/image 3 (1).png");
-        width: 392px;
-        height: 421px;
-        bottom: 288px;
-        position: relative;
+        background-image: url("../images/image 3 (1).png");
+        width: 340px;
+        height: 365px;
+        padding: 0;
+    margin: 0;
+        // bottom: 288px;
+        // position: relative;
     }
     .photo_block--block_3 {
       .block_3--full {
@@ -2614,10 +2723,13 @@ a[href^="tel"]{
           font-size: 15px;
           line-height: 25px;
           color: #959595;
+          span {
+            display: none;
+          }
         }
         .full--btn {
-          width: 228px;
-          height: 54px;
+          width: 190px;
+          height: 40px;
           background: #E3B873;
           box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.1);
           font-family: Yeseva One;
@@ -2639,18 +2751,21 @@ a[href^="tel"]{
         justify-content: center;
         position: relative;
         background: #ffffff;
-        width: 330px;
-        height: 414px;
+        width: 270px;
+        height: 241px;
         margin: 0 auto;
         padding-top: 25px;
         padding-left: 34px;
-        top: 300px;
+        top: 222px;
+        right: 35px;
       }
         background-image: url("../images/image\ 3.1.png");
-        width: 392px;
-        height: 421px;
-        bottom: 288px;
-        position: relative;
+        width: 340px;
+        height: 365px;
+        padding: 0;
+    margin: 0;
+        // bottom: 288px;
+        // position: relative;
     }
   }
 }
@@ -2659,7 +2774,8 @@ a[href^="tel"]{
   width: 1239px;
   height: 686px;
   margin: 0 auto;
-  display: flex;
+  display: none;
+  flex-direction: column;
   flex: 1 2;
   .steps--left {
     width: 337px;
@@ -2789,7 +2905,12 @@ a[href^="tel"]{
 .steps--team {
   display: flex;
   flex-direction: column;
-  padding-bottom: 250px;
+  margin: 0;
+  padding: 0;
+  background: #181818;
+  position: relative;
+  bottom: 300px;
+  // padding-bottom: 250px;
   .team--header {
     font-family: Yeseva One;
     font-style: normal;
@@ -2842,6 +2963,8 @@ a[href^="tel"]{
     padding-top: 9px;
   }
   .experience {
+    position: relative;
+    top: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2859,11 +2982,15 @@ a[href^="tel"]{
   }
 }
 .team {
-  width: 1063px;
-  height: 279px;
+  width: 340px;
+  height: 1400px;
+  position: relative;
+  bottom: 390px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: space-between;
   
   .team--person_1 {
     position: relative;
@@ -2924,45 +3051,13 @@ a[href^="tel"]{
 }
 
 .experience_txt {
-  font-family: FuturaBookC;
-  font-size: 20px;
-  line-height: 34px;
-  text-align: center;
-  color: #363636;
-  padding-bottom: 40px;
+display: none;
 }
 
-.our_clients {
-  width: 1236px;
-  height: 1060px;
-  margin: 0 auto;
-  .our_clients--description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .description--header {
-      font-family: Yeseva One;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 28px;
-      text-align: center;
-      text-transform: uppercase;
-      color: #181818;
-    }
-    .description--txt {
-      font-family: FuturaBookC;
-      font-size: 20px;
-      line-height: 27px;
-      text-align: center;      
-      color: #363636;
-    }
-  }
-}
 
 .our_clients--blocks {
-    display: flex;
+    display: none;
+    flex-direction: column;
     justify-content: space-between;
   
   .blocks--2 {
@@ -3087,5 +3182,202 @@ a[href^="tel"]{
     }
   }
 }
+.our_clients {
+  display: none;
+}
 
+/************FOOTER**********/
+footer > nav {
+  display: none !important;
+}
+.footer{
+  position: relative;
+  width: 340px;
+  bottom: 215px;
+  height: 484px;
+  background: rgba(24, 24, 24, 0.9);
+  .footer--authorization {
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: auto;
+    background: #181818;
+    margin: 0 auto;
+    // bottom: 250px;
+    .authorization--name_phone {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .authorization--input {
+      width: 340px;
+      height: auto;
+      margin: 0 auto;
+      padding: 0;
+      margin: 0;
+      padding-left: 18px;
+
+      .input--header {
+      font-family: Yeseva One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-top: 24px;
+      padding-bottom: 26px;
+      }
+        input[type="submit"] {
+          width: 340px;
+          height: 51px;;
+          background: #E3B873;
+          box-shadow: 0px 15px 15px rgba(227, 184, 115, 0.15);
+          border-radius: 2px;
+          border: none;
+          font-family: FuturaDemiC;
+          font-size: 13px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #FFFFFF;
+          padding: 0;
+          margin: 0;
+        }
+        label[for="name_3"], label[for="phone_3"], label[for="question"] {
+          font-family: FuturaBookC;
+          font-size: 15px;
+          line-height: 20px;
+          color: rgba(255, 255, 255, 0.5);
+        }
+        .authorization_input--name {
+          display: flex;
+          flex-direction: column;  
+          padding-bottom: 49px;
+          .input_name {
+            width: 340px;
+            height: auto;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            font-family: FuturaMediumC;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            background: none;
+            
+            
+          } 
+        }
+        .authorization_input--phone {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 49px;
+
+          .input_tel {
+            width: 340px;
+            height: auto;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            box-sizing: border-box;
+            font-family: FuturaMediumC;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            background: none;
+          background: none;
+  
+          }
+        }
+        .authorization_input--question {
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 46px;
+
+          .input_question {
+            width: 340px;
+            height: auto;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            box-sizing: border-box;
+            font-family: FuturaMediumC;
+            font-size: 18px;
+            line-height: 25px;
+            color: #FFFFFF;
+            background: none;
+  
+          }
+        }
+
+        .authorization_input--question {
+          display: flex;
+          flex-direction: column;
+        }
+        .authorization_input--checkbox {
+          display: flex;
+          // align-items: center;
+          justify-content: left;
+          font-family: FuturaBookC;
+          font-size: 16px;
+          line-height: 22px;
+          color: #FFFFFF;
+          padding-bottom: 50px;
+          
+        }  
+      }
+    }
+    
+  }
+  
+ .footer--contacts {
+  text-align: center;
+    margin-top: 82px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    top: 300px;
+    left: 17px;
+  img {
+    width: 340px;
+    height: a;
+  }
+ }
+ .nav{
+  display: flex;  
+  width: 100%;
+  height: 57px;
+  background: #131313;
+    .nav--block {
+      width: 100%;
+      height: 57px;
+      display: flex;
+      padding: 0;
+      align-items: center;
+      margin: 0;
+      
+      .nav--h1 {
+        width: 176px;
+        height: 10px;
+        font-family: "Futurademic";
+        font-size: 12px;
+        line-height: 14px;
+        text-transform: uppercase;
+        color: #E3B873;
+        padding: 0;
+        margin: 0;
+      }
+    }
+}
+ .footer--maps {
+  width: 340px;
+    position: relative;
+    bottom: 268px;
+    height: 255px;
+    margin: 0 auto;
+    left: 17px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+ }
 }
