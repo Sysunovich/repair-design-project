@@ -114,7 +114,7 @@
 }
 
 a[href^="tel"] {
-  color: inherit;
+  color: #fff;
 }
 
 .nav_block--button {
@@ -2168,7 +2168,7 @@ a[href^="tel"] {
     color: #FFFFFF;
   }
   a[href^="tel"] {
-    color: inherit;
+    color: #fff;
   }
   .nav_block--button {
     display: none;

@@ -94,10 +94,12 @@
   line-height: 16px;
   color: #E3B873;
   text-transform: uppercase;
+  
 }
 a[href^="tel"]{
-  color:inherit;
+  color: #fff;
 }
+
 
 .nav_block--button {
   position: relative;
@@ -1778,9 +1780,12 @@ a[href^="tel"]{
     line-height: 14px;
     text-align: right;
     color: #FFFFFF;
+    
   }
-  a[href^="tel"]{
-    color:inherit;
+
+
+ a[href^="tel"]{
+    color: #fff;
   }
   
   .nav_block--button {
@@ -1806,6 +1811,7 @@ a[href^="tel"]{
     text-decoration: none;
     list-style: none;
   }
+  
     
   .block_image {
     display: flex;
